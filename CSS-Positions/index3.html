@@ -1,46 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <aside>
-        <article>
-            <img src="" alt="">
-            <h3>Nome da pessoa</h3>
-            <p>nome</p>
-            <h3>Endereco</h3>
-            <p>enderec</p>
-            <h3>Telefone</h3>
-            <p>telefone</p>
-            <h3>email</h3>
-            <p>email</p>
-            <h3>Interesse</h3>
-            <p>interesse</p>
-        </article>
-        <main>
-            <h1>Nome</h1>
-            <p>sobre</p>
-            <h2>Experiencia profissional</h2>
-            <h3>cargo</h3>
-            <p>onde</p>
-            <ul>
-                <li>atuação</li>
-                <li>atuação</li>
-                <li>atuação</li>
-            </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
 
-            <h3>cargo</h3>
-            <p>onde</p>
-            <ul>
-                <li>atuação</li>
-                <li>atuação</li>
-                <li>atuação</li>
-            </ul>
-        </main>
-    </aside>
-</body>
+        html, body {
+        height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    }
+
+.todo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+    article {
+        height: 100%;   
+        
+    }
+
+    .articleinten1 {
+        background-color: rgb(66, 66, 66);
+        padding: 20px;
+        height: 100%;
+        
+    }
+
+    .articleinten2 {
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+    .borderbmais{
+        border-bottom: 1px solid white;
+        width: 300px;
+        margin-right: -20px;
+    }
+    .borderb{
+        border-bottom: 1px solid rgb(219, 219, 219);
+        
+        
+    }
+    .fontb{
+        color: white;
+    }
+    .ano{
+    text-align: right;
+    margin-bottom: -20px;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="todo">
+            <article >
+                <div class="articleinten1">
+                    <img
+                    src="data:image/jpeg;base64,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"
+                    alt="foto">
+                    <h2 class="borderbmais fontb" >Pessoal</h2>
+                    <h3 class="fontb">Nome da pessoa</h3>
+                    <p class="fontb">nome</p>
+                    <h3 class="fontb">Endereco</h3>
+                    <p class="fontb">enderec</p>
+                    <h3 class="fontb">Telefone</h3>
+                    <p class="fontb">telefone</p>
+                    <h3 class="fontb">email</h3>
+                    <p class="fontb">email</p>
+                    <h3 class="fontb">Interesse</h3>
+                    <p class="fontb">interesse</p>
+                </div>
+
+            </article>
+            <article>
+                <div class="articleinten2">
+                    <h1 class="borderb">Nome</h1>
+                    <p>sobre: Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptate esse ipsam veniam inventore blanditiis, laudantium rem! Hic vero, est tempora, saepe harum illo eaque expedita totam incidunt, iure temporibus?
+                    Tempora doloremque in illo ducimus, consequatur magnam. Eaque corporis praesentium nam voluptatum fugit eveniet nisi adipisci vel molestias assumenda quidem aliquam sapiente mollitia quod ad soluta iusto, asperiores, magni alias.
+                    Debitis quod quos sequi a error impedit quisquam ratione, sed fuga iusto nulla amet ipsa similique voluptatem, nemo quam, expedita sapiente possimus adipisci consequuntur mollitia cum. Est nobis fugiat assumenda.
+                    Odio modi animi doloreem temporibus, quisquam qui officia modi repellat ipsam iste excepturi, molestias debitis assumenda reiciendis minima adipisci amet laudantium atque iusto totam consectetur facilis quia ea.
+                    Totam quas saepe, tempora porro fuga nemo. Amet, iure cumque! Sint, odit non. Voluptatibus consectetur repellat dolorem neque cumque, quis facilis animi veniam quos voluptas sapiente aspernatur laborum vero porro?
+                    Explicabo minima reiciendis delectus ad sed, necessitatibus eum dolor soluta voluptates assumenda nam quisquam perspiciatis non iusto, omnis magnam alias. Ut ab pariatur facere inventore labore magnam soluta autem quam.</p>
+                    <h2 class="borderb">Experiencia profissional</h2>
+                    <h3>cargo <p class="ano">2020</p></h3>
+                    
+                    <p>onde</p>
+                    <ul>
+                        <li>atuação</li>
+                        <li>atuação</li>
+                        <li>atuação</li>
+                    </ul>
+
+                    <h3>cargo <p class="ano">2020</p></h3>
+                    
+                    <p>onde</p>
+                    <ul>
+                        <li>atuação</li>
+                        <li>atuação</li>
+                        <li>atuação</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </body>
 </html>

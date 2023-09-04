@@ -24,16 +24,32 @@
         }
 
         .quadrado:nth-child(3){
-            position: relative;
-            
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: white;
         }
+
+        .quadrado:nth-child(4){
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .quadrado:nth-child(5){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -25px 0 0 -25px;
+        }  
     </style>
 </head>
 <body>
+    
     <div class="quadrado" style="background-color: red;">Primeiro</div>
     <div class="quadrado" style="background-color: blue;">Segundo</div>
-    <div class="quadrado" style="background-color: black;">Terceiro</div>
+    <div class="quadrado" style="background-color: black;"><p>Terceiro</p></div>
     <div class="quadrado" style="background-color: blueviolet;">Quarto</div>
-    <div class="quadrado" style="background-color: aqua;">Quinto</div>
+   <div class="quadrado" style="background-color: aqua;">Quinto</div>
 </body>
 </html>
