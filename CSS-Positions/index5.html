@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url(https://s1.static.brasilescola.uol.com.br/be/2022/11/vista-de-um-por-do-sol-sobre-as-nuvens-com-o-ceu-apresentando-varias-cores.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: trocafundo 4s linear forwards;
+}
+.foguete {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: sobe 4s linear forwards;
+   
+}
+
+.f, .l {
+    width: 150px;
+    height: 150px;
+}
+.f{
+    animation: explode 4s linear forwards;
+}
+.l{
+    position: absolute;
+    margin: 30px;
+    margin-top: -30vh;
+    animation: luatroca 4s linear forwards;
+}
+
+
+@keyframes sobe {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-80vh);
+    }
+}
+
+@keyframes trocafundo{
+    0%{
+        background-image: url(https://s1.static.brasilescola.uol.com.br/be/2022/11/vista-de-um-por-do-sol-sobre-as-nuvens-com-o-ceu-apresentando-varias-cores.jpg);
+
+    } 
+    100%{
+        background-image: url(https://hypescience.com/wp-content/uploads/2014/06/Space.tga_.jpg);
+        
+    }
+}
+
+@keyframes luatroca{
+    0%{
+       transform: translateY(0); 
+    }
+    100%{
+        transform: translateY(100vh);
+    }
+}
+
+
+
+
+</style>
+<body>
+    <div class="foguete"><img class="f" src="https://cdn.pixabay.com/photo/2019/05/01/14/25/space-4171004_1280.png" alt="foguete"></div>
+    <div> <img  class="l" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/800px-Lua-Logo.svg.png" alt=""></div>
+</body>
+</html>
