@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            display: flex;
+        }
+        .bandeiras{
+            border: 2px solid black;
+            display: flex;
+        }
+        .japao{
+            width: 500px;
+            height: 200px;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            justify-content: center;
+        }
+        .bolavermelha{
+            width: 120px;
+            height:120px;
+            position: absolute;
+            background-color: rgb(255, 23, 15);
+            border-radius: 50%;
+        }
+        
+        .brasil{
+            width: 500px;
+            height: 200px;
+            display: flex;
+            background-color: green;
+            align-items: center;
+            justify-content: center;
+        }
+        .triangulo{
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            border: 80px solid;
+            border-right-width: 200px;
+            border-right-color: yellow;
+            border-top-color: transparent ;
+            border-left-color: transparent ;
+            border-bottom-color: transparent ;
+        }
+        .triangulo2{
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            border: 80px solid;
+            border-left-width: 200px;
+            border-right-color: transparent;
+            border-top-color: transparent ;
+            border-left-color: yellow ;
+            border-bottom-color: transparent ;
+        }
+        .bolaazul{
+            width: 120px;
+            height:120px;
+            position: absolute;
+            background-color: rgb(7, 7, 167);
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bandeiras">
+        <div class="japao">
+            <div class="bolavermelha"></div>
+        </div>
+        <div class="brasil">
+            <div class="triangulo"></div>
+            <div class="bolaazul"></div>
+            <div class="triangulo2"></div>
+        </div>
+    </div>
+</body>
+</html>
