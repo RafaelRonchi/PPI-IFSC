@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            width: 100vh;
+            height: 100vh;
+        }
+        .bandeiras{
+            width: 100%;
+            display: inline-block;
+        }
+        .japao{
+            border: 2px solid black;
+            height: 200px;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            justify-content: center;
+        }
+        .bolavermelha{
+            width: 120px;
+            height:120px;
+            position: absolute;
+            background-color: rgb(255, 23, 15);
+            border-radius: 50%;
+        }
+        .holanda{
+            border: 2px solid black;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+        .linhas{
+            
+            height: 100%;
+            width: 100%;
+        }
+        .linhas1{
+            background-color: red;
+        }
+        .linhas3{
+            background-color: rgb(19, 139, 245);
+        }
+        
+        .Italia{
+            border: 2px solid black;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+        }
+        .linhasI{
+            
+            height: 100%;
+            width: 100%;
+        }
+        .linhasI1{
+            background-color: rgb(28, 148, 4);
+        }
+        .linhasI3{
+            background-color: rgb(245, 27, 19);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bandeiras">
+        <div class="japao">
+            <div class="bolavermelha"></div>
+        </div>
+        <div class="holanda">
+            <div class="linhas linhas1"></div>
+            <div class="linhas linhas2"></div>
+            <div class="linhas linhas3"></div>
+        </div>
+        <div class="Italia">
+            <div class="linhasI linhasI1"></div>
+            <div class="linhasI linhasI2"></div>
+            <div class="linhasI linhasI3"></div>
+        </div>
+    </div>
+</body>
+</html>
