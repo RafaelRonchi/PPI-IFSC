@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Att 1</title>
+    <style>
+        
+        .container{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+           
+        }
+        .container1, .container2, .container3, .container4{
+            
+            margin: 10px;
+            height: 100px;
+            display: flex;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        
+        .container2{
+            align-items: center;
+            justify-content: center;
+        }
+        .container2 *{
+            height: 80%;
+            border: 1px solid black;
+        }
+        .container2_1{
+            width: 20%;
+        }
+        .container2_2{
+            margin-left: 20px;
+            width: 70%;
+        }
+        .container3{
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+        .container3 *{
+            height: 90%;
+            width: 20%;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 1px solid black;
+        }
+        .container4{
+            align-items: center;
+            justify-content: center;
+        }
+        .container4_1{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            height: 90%;
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1"></div>
+        <div class="container2">
+            <div class="container2_1"></div>
+            <div class="container2_2"></div>
+        </div>
+        <div class="container3">
+            <div class="container3_1"></div>
+            <div class="container3_1"></div>
+            <div class="container3_1"></div>
+            <div class="container3_1"></div>
+        </div>
+        <div class="container4">
+            <div class="container4_1"></div>
+        </div>
+    </div>
+</body>
+</html>
