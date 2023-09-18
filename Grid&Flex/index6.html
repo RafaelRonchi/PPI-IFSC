@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0
+            ;
+            padding: 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .container {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "tela tela tela tela"
+                "btn1 btn2 btn4 btn5"
+                "btn6 btn7 btn8 btn9"
+                "btn10 btn11 btn12 btn13"
+                "btn14 btn15 btn16 btn17";
+                height: 100vh;
+            background-color: rgb(172, 172, 172);
+        }
+
+        .tela { 
+            grid-area: tela;
+        }
+
+        .btn1 { 
+            grid-area: btn1; 
+        }
+
+        .btn2 { 
+            grid-area: btn2; 
+        }
+
+        .btn4 { 
+            grid-area: btn4; 
+        }
+
+        .btn5 { 
+            grid-area: btn5; 
+        }
+
+        .btn6 { 
+            grid-area: btn6; 
+        }
+
+        .btn7 { 
+            grid-area: btn7; 
+        }
+
+        .btn8 { 
+            grid-area: btn8; 
+        }
+
+        .btn9 { 
+            grid-area: btn9; 
+        }
+
+        .btn10 { 
+            grid-area: btn10; 
+        }
+
+        .btn11 { 
+            grid-area: btn11; 
+        }
+
+        .btn12 { 
+            grid-area: btn12; 
+        }
+
+        .btn13 { 
+            grid-area: btn13; 
+        }
+
+        .btn14 { 
+            grid-area: btn14; 
+        }
+
+        .btn15 { 
+            grid-area: btn15; 
+        }
+
+        .btn16 { 
+            grid-area: btn16; 
+        }
+
+        .btn17 { 
+            grid-area: btn17; 
+        }
+        
+        .brancoTela{
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .branco{
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 10px;
+            margin: 40px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tela brancoTela">0</div>
+        <div class="btn1 branco">7</div>
+        <div class="btn2 branco">8</div>
+        <div class="btn4 branco">9</div>
+        <div class="btn5 branco">/</div>
+        <div class="btn6 branco">4</div>
+        <div class="btn7 branco">5</div>
+        <div class="btn8 branco">6</div>
+        <div class="btn9 branco">*</div>
+        <div class="btn10 branco">1</div>
+        <div class="btn11 branco">2</div>
+        <div class="btn12 branco">3</div>
+        <div class="btn13 branco">-</div>
+        <div class="btn14 branco">0</div>
+        <div class="btn15 branco">.</div>
+        <div class="btn16 branco">=</div>
+        <div class="btn17 branco">+</div>
+    </div>
+</body>
+</html>
