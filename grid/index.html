@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 100vh;
+        }
+        .container2{
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+             grid-template-columns: repeat(auto-fill, 1fr); 
+            height: 100vh;
+            background-color: aqua;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: rgb(8, 231, 0);
+            
+            transition: all 1s ease-in-out;
+            border-radius: 30px;
+            margin: 40px;
+        }
+        .container3{
+            display: grid;
+            grid-template-areas: "a1 a2" "b1 b1" "c1 c2";
+        }
+        .a1{
+            background-color: rebeccapurple;
+            grid-area: a1;
+        }
+        .a2{
+            background-color: rgb(26, 5, 48);
+            grid-area: a2;
+        }
+        .b1{
+            background-color: brown;
+            grid-area: b1;
+        }
+        .c1{
+            grid-area: c1;
+        }
+        .c2{
+            grid-area: c2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="container1" style="background-color: red;">.</div>
+        <div class="container2" style="background-color: rgb(0, 26, 255);">.</div>
+        <div class="container3" style="background-color: black;">.</div>
+    </div>
+    <div class="container2">
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+        <div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div><div id="box-1" class="box">1</div>
+        <div id="box-2" class="box">2</div>
+        <div id="box-3" class="box">3</div>
+        <div id="box-4" class="box">4</div>
+        <div id="box-5" class="box">5</div>
+        <div id="box-6" class="box">6</div>
+        <div id="box-7" class="box">7</div>
+        <div id="box-8" class="box">8</div>
+        <div id="box-9" class="box">9</div>
+        <div id="box-10" class="box">10</div>
+
+    </div>
+    <div class="container3">
+        <div class="a1">.</div>
+        <div class="a2">.</div>
+        <div class="b1">.</div>
+        
+        <div class="c1" style="background-color: rgb(0, 26, 255);">.</div>
+        <div class="c1" style="background-color: black;">.</div>
+    </div>
+</body>
+</html>
