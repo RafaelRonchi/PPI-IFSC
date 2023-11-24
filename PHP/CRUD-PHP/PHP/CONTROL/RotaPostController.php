@@ -4,7 +4,7 @@
    
 
    if(!isset($_POST['op'])){
-         echo("Erro parametro não pasado");
+         echo("Erro parametro não passado");
          exit();
    }
 
@@ -25,8 +25,7 @@
            
            $frutaController = new FrutaController();
            $frutaController->cadastrarFruta($nome, $descricao, $url_image, $quantidade);
-           
-
+           header('Location: ../VIEW/view_listagem.php');
 
         break;
         case 'atualizar':
@@ -42,6 +41,7 @@
             $url = $_POST['url_image'];
             $frutaController = new FrutaController();
             $frutaController->editarFruta($id, $nome, $desc, $url, $quant);
+            header('Location: ../VIEW/view_listagem.php');
 
  
          break;
@@ -56,6 +56,7 @@
                          $frutaController->excluirFruta($id);
              header('Location: ../VIEW/view_listagem.php');
          break;
+
 
     }
    

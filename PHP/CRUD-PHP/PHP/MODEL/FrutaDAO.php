@@ -42,7 +42,8 @@ include_once "../DB/Database.php";
                 $stmt->bindValue(':url_image', $fruta->getImagem());
                 $stmt->bindValue(':id', (int)$fruta->getId());
         
-                return$stmt->execute();
+                
+                $stmt->execute();
             } catch (PDOException $e) {
                 // Captura e trata a exceção aqui
                 echo "Erro ao executar a consulta: " . $e->getMessage();
@@ -78,22 +79,34 @@ include_once "../DB/Database.php";
             }
         }
 
-        //listar por id
         public function search($id){
             $dao = new Database();
             $conn = $dao->getConnection(); 
-
+        
             $sql = 'SELECT * FROM item WHERE id = ?';
             $stmt = $conn->prepare($sql);
             $stmt->bindValue(1, $id);
             $stmt->execute();
+            
             if($stmt->rowCount() > 0){
                 $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
-                return $resultado;
-            }else{
-                return [];
+                $fruta = new Fruta();
+
+                $fruta->setAll(
+                    $resultado['id'],
+                    $resultado['nome'],
+                    $resultado['descricao'],
+                    $resultado['url_image'],
+                    $resultado['quantidade']
+                );
+        
+                return $fruta;
+            } else {
+                return null; 
             }
         }
+        
+        
 
 
     }

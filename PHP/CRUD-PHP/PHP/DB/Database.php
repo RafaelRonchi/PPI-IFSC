@@ -8,7 +8,7 @@
 
         public function getConnection(){
             $this-> user = "root";
-            $this-> password = "aluno"; 
+            $this-> password = "root"; 
             $this-> host = "localhost";
             $this-> database = "crud";
 
